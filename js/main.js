@@ -28,3 +28,4 @@ eggImg.onclick = function() {
         eggImg.classList.remove('egg-tap');
     }, 200);
 };
+alert("この卵を割ってみて下さい")
