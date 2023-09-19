@@ -13,8 +13,16 @@ eggImg.onclick = function() {
     localStorage.setItem('tapCount', count);
 
     if (count <= 0) {
-        countText.textContent = 'ワレルトオモウナヨ';
-        this.src = 'img/cracked-egg.png';
+        if (count == 0) {
+            if (Math.floor(Math.random()*10)==5) {
+                countText.textContent = 'ワレチャッタネ、ザンネン';
+                this.src = 'img/hiyoko_baby.png';
+                
+            } else {
+                countText.textContent = 'ワレルトオモウナヨ';
+                this.src = 'img/cracked-egg.png';
+            }
+        }
         localStorage.removeItem('tapCount');
         return;
     }
