@@ -15,7 +15,7 @@ eggImg.onclick = function() {
 
     if (count <= 0) {
         if (count == 0) {
-            if (Math.floor(Math.random()*2)==1) {
+            if (Math.floor(Math.random()*10)==1) {
                 countText.textContent = 'ワレチャッタネ、ザンネン';
                 this.src = 'img/hiyoko_baby.png';
                 chick++
